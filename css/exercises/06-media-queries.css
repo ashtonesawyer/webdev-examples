@@ -1,6 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+header {
+  position: relative;
+  background-color: var(--black);
+  padding: 5px 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  padding: 0 10px;
+}
+
 @media (min-width: 1024px) {
   body {
     background: var(--green);
     color: var(--white);
+  }
+}
+
+@media (min-width: 415px) and (max-width: 1023px) {
+  body {
+    background-color: var(--orange);
+  }
+}
+
+@media (max-width: 414px) {
+  body {
+    background-color: var(--purple);
+    color: var(--white);
+  }
+
+  li {
+    display: block;
   }
 }
