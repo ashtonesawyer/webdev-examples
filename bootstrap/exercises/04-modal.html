@@ -13,5 +13,40 @@
   </head>
   <body>
     <!-- Add your code here -->
+    <main class="container-fluid mt-4">
+      <div class="text-center">
+        <h1 class="mb-5">04 - Modal</h1>
+        <div class="my-4">
+          <p>Click on the button below for more information inside a modal</p>
+          <button
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
+            More details
+          </button>
+        </div>
+      </div>
+      <div class="modal fade mt-5" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">More Details</h5>
+              <button
+                class="btn btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              voluptatibus illo cumque porro animi perspiciatis, exercitationem
+              sed neque officiis sint aliquid blanditiis ex eum, a at, magni
+              repellendus quod sunt?
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
